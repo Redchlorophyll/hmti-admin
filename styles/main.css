@@ -107,6 +107,12 @@
 .mailcard a {
 }
 
+.alert {
+  padding: 7px;
+  background-color: #fc8080;
+  color: #fff;
+}
+
 @media only screen and (max-width: 858px) {
   .hwm {
     display: none;
