@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="modules/materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <!-- header START -->
+    <header>
+      <!-- nav START -->
+      <nav>
+        <div class="nav-wrapper blue-grey darken-4">
+          <a href="#!" class="brand-logo">
+            <img src="img/logo2.png" alt="">
+          </a>
+          <ul class="right hide-on-med-and-down m-right">
+            <li><a class="dropdown-trigger m-right" href="#!"data-target="dropdown3">main</a></li>
+            <li><a class="dropdown-trigger m-right" href="#!"data-target="dropdown2">master</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">
+              <img class="circle responsive-img user" src="img/3662.jpg">
+            </a></li>
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="#!">logout</a></li>
+            </ul>
+            <ul id='dropdown2' class='dropdown-content'>
+              <li><a href="users.html">user</a></li>
+              <li><a href="galery.html">galeri</a></li>
+              <li><a href="artikel.html">artikel</a></li>
+              <li><a href="proker.html">proker</a></li>
+            </ul>
+            <ul id='dropdown3' class='dropdown-content'>
+              <li><a href="index.html">home</a></li>
+              <li><a href="inbox.html">mail box</a></li>
+            </ul>
+          </ul>
+          <a href="#" data-target="slide-out" class="sidenav-trigger">
+            <i class="material-icons">dehaze</i>
+          </a>
+        </div>
+      </nav>
+      <!-- nav END -->
+
+    <!-- sidebar START -->
+    <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="img/Mountain-wallpaper-HD.jpeg">
+        </div>
+        <a href="#user"><img class="circle" src="img/3662.jpg"></a>
+        <a href="#name"><span class="white-text name">Kominfo</span></a>
+        <a href="#email"><span class="white-text email">hmti@ump.ac.id</span></a>
+      </div></li>
+      <li><a class="subheader"><i class="material-icons">view_list</i>main</a></a></li>
+      <li><a href="index.html"><i class="material-icons">home</i>home</a></li>
+      <li><a href="inbox.html"><i class="material-icons">email</i>mail box<span class="badge">14</span></a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader"><i class="material-icons">build</i>tabel master</a></a></li>
+      <li><a class="waves-effect" href="users.html"><i class="material-icons">folder</i>User</a></li>
+      <li><a class="waves-effect" href="artikel.html"><i class="material-icons">folder</i>Artikel</a></li>
+      <li><a class="waves-effect" href="galery.html"><i class="material-icons">folder</i>Galeri</a></li>
+      <li><a class="waves-effect" href="proker.html"><i class="material-icons">folder</i>Proker</a></li>
+      <li><a class="subheader"><i class="material-icons">settings</i>Options</a></a></li>
+      <li><a class="waves-effect" href="#!"><i class="material-icons">exit_to_app</i>logout</a></li>
+    </ul>
+    <!-- sidebar END -->
+
+    </header>
+    <!-- header END -->
+    
+    <main>
+      <div class="container">
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                <label for="first_name">Title</label>
+              </div>
+            </div>
+            <div class="row">
+               <div class="input-field col s12">
+                 <input disabled value="kominfo" id="disabled" type="text" class="validate">
+                 <label for="disabled">author</label>
+               </div>
+             </div>
+            <div class="row">
+              <div class="file-field input-field">
+                  <div class="btn">
+                    <span>File</span>
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                  </div>
+                  <span class="helper-text" data-error="wrong" data-success="right">upload dokumentasi disini</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 center-align">
+                <a class="waves-effect waves-light btn">submit</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+  <script src="modules/jquery/jquery-3.5.1.min.js"></script>
+  <script src="modules/materialize/js/materialize.min.js" charset="utf-8"></script>
+  <script src="js/navbar.js" charset="utf-8"></script>
+  </body>
+</html>
